@@ -16,7 +16,7 @@ sibling(X, Y) :- parent(Z, X), parent(Z, Y), X \= Y.
 ancestor(X, Y) :- parent(X, Y).
 ancestor(X, Y) :- parent(Z, Y), ancestor(X, Z).
 
-% 4. Food Preferences
+%Preferencias de comida
 likes(alicia, pizza).
 likes(juan, pizza).
 likes(amelia, pasta).
@@ -31,7 +31,6 @@ likes(salome, pizza).
 % 6. Food friends: true si X e Y gustan de la misma comida y no son la misma persona
 food_friend(X, Y) :- likes(X, Food), likes(Y, Food), X \= Y.
 
-% 7. Math Utility
 % 8. Factorial recursivo
 factorial(0, 1).
 factorial(N, F) :- N > 0, N1 is N-1, factorial(N1, F1), F is N * F1.
