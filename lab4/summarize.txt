@@ -1,0 +1,12 @@
+The code implemented creates a maze, declaring the nodes that are connected and the paths that are blocked. 
+This maze works like an inderected graph.
+
+The rules implemented allow to create a path between nodes that are not connected directly.
+Besides, other rules provides the user an explanation of the decisions taken by the program.
+The rule "can_move" decides if a movement is possible if there exists a edge connecting the nodes.
+the rule "reason" returns the relation between two nodes.
+the rule "why" explains why a node was added or not to the final path.
+the rule "move" explores the maze until it finds a way to connect the given nodes.
+The rule "find_path" return a list with the path betwwen the given nodes.
+The rule " print_path" print the path found by the previous rule.
+the rule "count_visited" counts the number of nodes that takes to move from node X to node Y.
