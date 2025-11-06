@@ -38,13 +38,6 @@ apply_constraint(Vars, A-B):-
     nth1(IdxB, Vars, ColorB),
     ColorA#\=ColorB.
 
-% apply_constraint_generic(Regions, Vars, RegionA-RegionB) :-
-%     nth1(IdxA, Regions, RegionA),
-%     nth1(IdxB, Regions, RegionB),
-%     nth1(IdxA, Vars, ColorA),
-%     nth1(IdxB, Vars, ColorB),
-%     ColorA #\= ColorB.
-
 %Ties it all together for Auatralia..
 colorize_au(K,Vars):-
     regions_au(Regions),
